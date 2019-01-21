@@ -1,9 +1,11 @@
 public interface MyList<E> {
-    void add(E stu);
+    // needed for ratings problem
+    void add(E element);
     E get(int index);
-    void remove(E stu);
-    E remove(int index);
-    void insert(E stu, int index);
-    int indexOf(E stu);
     int size();
+    // other list methods
+    void remove(E element);
+    E remove(int index);
+    void insert(E element, int index);
+    int indexOf(E element);
 }
