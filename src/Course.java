@@ -3,8 +3,18 @@ public class Course {
     private int number;
     private int section;
     private int capacity;
-    private StudentList registered;
-    private StudentList waiting;
+    private MyList<Student> registered;
+    private MyList<Student> waiting;
+
+    public Course(String major, int number, int section, int capacity,
+                  MyList<Student> registered, MyList<Student> waiting) {
+        this.major = major;
+        this.number = number;
+        this.section = section;
+        this.capacity = capacity;
+        this.registered = registered;
+        this.waiting = waiting;
+    }
 
     public void registerStudent(Student stu) {
         if(stu.getMajor().equals(major) && registered.size() < capacity) {
