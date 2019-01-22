@@ -13,17 +13,17 @@ public class Professor {
         ratings.add(rating);
     }
 
-    public double getOverallAverage() {
+    public double getOverallQuality() {
         double total = 0;
         for(int i=0; i<ratings.size(); i++) {
             Rating rating = ratings.get(i);
-            total += rating.getOverall();
+            total += rating.getQuality();
         }
 
         return total / ratings.size();
     }
 
-    public double getDifficultyAverage() {
+    public double getAverageDifficulty() {
         double total = 0;
         for(int i=0; i<ratings.size(); i++) {
             Rating rating = ratings.get(i);

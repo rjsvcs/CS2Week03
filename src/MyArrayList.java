@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class MyArrayList<E> implements MyList<E> {
     private Object[] elements;
     private int size;
@@ -10,9 +12,7 @@ public class MyArrayList<E> implements MyList<E> {
     @Override
     public void add(E stu) {
         if(size == elements.length) {
-            Object[] bigger = new Object[size*2];
-            System.arraycopy(elements, 0, bigger, 0, size);
-            elements = bigger;
+            elements = Arrays.copyOf(elements, size*2);
         }
         elements[size] = stu;
         size++;
