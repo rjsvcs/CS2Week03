@@ -1,3 +1,5 @@
+package lecture;
+
 public class Professor {
     private String name;
     private String university;

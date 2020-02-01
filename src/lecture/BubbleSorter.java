@@ -1,3 +1,5 @@
+package lecture;
+
 /**
  * A {@link Sorter} that uses Bubble Sort to sort arrays of integers.
  */

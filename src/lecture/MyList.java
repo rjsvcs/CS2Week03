@@ -1,3 +1,5 @@
+package lecture;
+
 public interface MyList<E> {
     // needed for ratings problem
     void add(E element);

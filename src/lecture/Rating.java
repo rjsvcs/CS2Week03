@@ -1,3 +1,5 @@
+package lecture;
+
 public class Rating {
     private String className;
     private int quality;

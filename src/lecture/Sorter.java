@@ -1,3 +1,5 @@
+package lecture;
+
 /**
  * Defines the behavior for any class that can sort an array of integers.
  */
